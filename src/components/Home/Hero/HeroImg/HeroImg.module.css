@@ -68,6 +68,7 @@
 }
 .tabBar {
   position: absolute;
+  left: 0;
   top: 60%;
   transform: translateX(-30%);
   max-width: 264px;
