@@ -21,7 +21,7 @@ const Footer = () => {
           <img src="/logo.png" alt="" />
           <div className={styles.links}>
             {navItems.map((el, i) => (
-              <a className="source" href={el.to}>
+              <a className="source" href={el.to} key={i}>
                 {el.navItem}
               </a>
             ))}
@@ -31,7 +31,7 @@ const Footer = () => {
           <p>© 2023 UI8</p>
           <div className={styles.socials}>
             {socials.map((el, i) => (
-              <a href={el.to} target="blank">
+              <a href={el.to} target="blank" key={i}>
                 <img src={el.icon} alt="" />
               </a>
             ))}
