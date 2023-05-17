@@ -8,7 +8,9 @@
   position: absolute;
   border-radius: 16px;
   z-index: -1;
+  left: 50%;
   inset: -1px;
+
   background: conic-gradient(
     from 180deg at 50% 50%,
     #ff98e2 0deg,
@@ -25,6 +27,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
+  display: block;
 }
 .inputContainer {
   position: absolute;
