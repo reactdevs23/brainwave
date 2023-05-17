@@ -1,0 +1,158 @@
+.connect {
+  margin-top: 100px;
+}
+.contain {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.imgWrap,
+.connectDesc {
+  width: 100%;
+}
+.imgWrap img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.connectDesc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.connectDesc h5 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #ada8c4;
+  text-transform: uppercase;
+}
+.connectDesc h5 span {
+  margin: 0px 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  background-image: conic-gradient(
+    from 180deg at 50% 50%,
+    #ff98e2 0deg,
+    #ffc876 35.77deg,
+    #79fff7 153.75deg,
+    #9f53ff 258.75deg,
+    #ff98e2 360deg
+  );
+}
+.connectDesc h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+}
+
+.connectDesc p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #ada8c4;
+  line-height: 1.5;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  gap: 24px;
+  margin-top: 20px;
+}
+.stepBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.stepBox .progress {
+  width: 100%;
+  background: #d9d9d9;
+  opacity: 0.1;
+  border-radius: 100vh;
+  height: 2px;
+  margin-bottom: 20px;
+}
+.activeBox .progress {
+  opacity: 1;
+  position: relative;
+}
+.activeBox .progress::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  border-radius: 100vh;
+  background-color: #ac6aff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stepBox h5 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #757185;
+}
+.stepBox h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+.stepBox p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #b6b1c8;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1236px) {
+  .connect {
+    margin-top: 0px;
+  }
+  .top {
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgWrap img {
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 660px) {
+  .connectDesc h2 {
+    font-size: 28px;
+  }
+  .connectDesc h2 br {
+    display: none;
+  }
+  .bottom {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 70px;
+  }
+}

@@ -1,0 +1,133 @@
+.imageContainer {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.imageContainer .border {
+  position: absolute;
+  border-radius: 16px;
+  z-index: -1;
+  inset: -1px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #ff98e2 0deg,
+    #ffc876 35.77deg,
+    #79fff7 153.75deg,
+    #9f53ff 258.75deg,
+    #ff98e2 360deg
+  );
+}
+.image {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+.inputContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+  max-width: 488px;
+  width: 95%;
+  height: 54px;
+  margin: 0 auto;
+  background: rgba(14, 12, 23, 0.85);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 5px 15px;
+  padding-left: 30px;
+}
+.input {
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #ffffff;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+}
+.loadingText {
+  width: auto;
+}
+.tabBar {
+  position: absolute;
+  top: 60%;
+  transform: translateX(-30%);
+  max-width: 264px;
+}
+.codeGeneration {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(30%);
+  max-width: 294px;
+}
+@media only screen and (max-width: 1250px) {
+  .tabBar {
+    transform: translateX(-20%);
+  }
+  .codeGeneration {
+    transform: translateX(20%);
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .tabBar {
+    max-width: 230px;
+    transform: translateX(-5%);
+  }
+  .codeGeneration {
+    max-width: 250px;
+    transform: translateX(5%);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tabBar {
+    max-width: 200px;
+    transform: translateX(-5%);
+    top: 45%;
+  }
+  .codeGeneration {
+    max-width: 220px;
+    transform: translateX(5%);
+    top: 35%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .inputContainer {
+    padding: 5px 15px;
+    padding-left: 20px;
+    height: 44px;
+  }
+  .input {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .image {
+    min-height: 250px;
+  }
+  .tabBar {
+    max-width: 160px;
+    transform: translateX(-3%);
+    top: 100px;
+  }
+  .codeGeneration {
+    max-width: 180px;
+    transform: translateX(3%);
+    top: 30px;
+  }
+}

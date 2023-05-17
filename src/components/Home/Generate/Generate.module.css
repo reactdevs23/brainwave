@@ -1,0 +1,228 @@
+.generateWrapp {
+  margin-top: 150px;
+}
+.generateWrapp > div {
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  isolation: isolate;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gr {
+  background-color: #907cff63;
+  width: 100%;
+  max-width: 905px;
+  aspect-ratio: 1;
+  left: 0%;
+  top: 20%;
+  border-radius: 100vh;
+  filter: blur(128px);
+  opacity: 0.4;
+  mix-blend-mode: color-dodge;
+  position: absolute;
+  z-index: -10;
+}
+.heading > h2 {
+  padding: 0px 20px;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.heading p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  color: #b6b1c8;
+}
+.generateDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  gap: 30px;
+}
+.generate1 {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  border-radius: 24px;
+}
+.generate1 > img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.generate1 .generateDesc {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.generateDesc h4 {
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+}
+.generateDesc p {
+  max-width: 270px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b6b1c8;
+}
+.features {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+.feature {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 20px;
+}
+.feature p {
+  color: white;
+}
+.feature img {
+  width: 24px;
+  object-fit: contain;
+}
+.generateRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.generate2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  border-radius: 24px;
+}
+.generate2 .generateDesc p,
+.generate3 .generateDesc p {
+  max-width: 100%;
+}
+.generate2 .generateDesc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+.generate2 > img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.generate3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #15131d;
+  border-radius: 24px;
+  padding: 16px;
+  overflow: hidden;
+}
+.generate3 .generateDesc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  align-self: center;
+  padding: 20px 0px;
+}
+.generateIcos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.generate3 > video {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: auto;
+}
+@media screen and (max-width: 1050px) {
+  .generateRow {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .generate2 {
+    max-height: 600px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .generateWrapp {
+    margin-top: 80px;
+  }
+  .heading h2 {
+    font-size: 28px;
+  }
+  .generateDiv {
+    margin-top: 0px;
+  }
+  .generate1 {
+    height: 400px;
+  }
+  .generate1 > img {
+    height: 100%;
+  }
+  .generate1 .generateDesc {
+    left: 5%;
+    right: initial;
+  }
+}
+@media screen and (max-width: 550px) {
+  .generate2 .generateDesc {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .generate3 .generateDesc {
+    width: 100%;
+    padding: 20px;
+  }
+  .generateIcos {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .generate3 {
+    gap: 10px;
+  }
+  .generateDesc h4 {
+    font-size: 24px;
+  }
+  .generate3 {
+    padding: 10px;
+  }
+}

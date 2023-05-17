@@ -1,0 +1,15 @@
+.grBtn {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  background-image: url("/public/btn-border.png");
+  background-size: 100% 100%;
+}
+.bigBtn {
+  background-image: url("/public/btn-border-big.png");
+}

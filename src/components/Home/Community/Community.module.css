@@ -1,0 +1,196 @@
+.commWrapp {
+  margin-top: 120px;
+}
+.commWrapp > div {
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  isolation: isolate;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  gap: 20px;
+}
+.heading > h2 {
+  padding: 0px 20px;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.heading p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  color: #b6b1c8;
+}
+.heading p span {
+  margin: 0px 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  background-image: conic-gradient(
+    from 180deg at 50% 50%,
+    #ff98e2 0deg,
+    #ffc876 35.77deg,
+    #79fff7 153.75deg,
+    #9f53ff 258.75deg,
+    #ff98e2 360deg
+  );
+}
+.reviewBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+  padding: 36px;
+  background-color: #0e0c15;
+  border: 1px solid rgba(117, 113, 113, 0.5);
+  border-radius: 24px;
+  min-height: 420px;
+}
+.bgImage {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -10;
+  transform: translateX(-50%);
+}
+.reviewBox > .logo {
+  object-fit: contain;
+}
+.nameDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+.nameDiv h3 {
+  font-size: 24px;
+  color: white;
+}
+.nameDiv p {
+  font-size: 24px;
+  color: #757185;
+}
+.rightReview {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 105%;
+  max-width: 350px;
+  width: 100%;
+  z-index: 10;
+  isolation: isolate;
+  border-radius: 16px;
+}
+.rightReview .border {
+  position: absolute;
+  border-radius: 16px;
+  z-index: -1;
+  inset: -1px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #ff98e2 0deg,
+    #ffc876 35.77deg,
+    #79fff7 153.75deg,
+    #9f53ff 258.75deg,
+    #ff98e2 360deg
+  );
+}
+.inner {
+  background-color: #0e0c15;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+}
+.inner p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+}
+.reviewsDiv {
+  width: 100%;
+}
+.arrowRight,
+.arrowLeft {
+  position: static;
+  transform: none;
+  opacity: 1;
+  background: transparent;
+  width: 48px;
+  height: 48px;
+}
+.arrowDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  gap: 20px;
+}
+@media screen and (max-width: 712px) {
+  .commWrapp {
+    margin-top: 80px;
+  }
+  .heading h2 {
+    font-size: 28px;
+  }
+  .reviewBox {
+    height: 100%;
+    gap: 30px;
+    isolation: isolate;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    min-height: auto;
+    align-items: center;
+  }
+  .nameDiv {
+    align-items: center;
+    text-align: center;
+  }
+  .rightReview {
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+  }
+  .inner {
+    padding: 15px;
+    gap: 20px;
+  }
+  .inner p {
+    font-size: 16px;
+  }
+  .bgImage {
+    height: 100%;
+    left: 100%;
+    z-index: -20;
+  }
+}
