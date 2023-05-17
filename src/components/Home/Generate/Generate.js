@@ -57,14 +57,8 @@ const Generate = () => {
                   <img src="/gen_ico5.png" alt="" />
                 </div>
               </div>
-              <video
-                src="/test.mp4"
-                playsInline
-                loop
-                muted
-                autoPlay
-                controls
-              ></video>
+
+              <img src="/generate3.png" alt="" />
             </div>
           </div>
         </div>

@@ -166,6 +166,13 @@
   width: 100%;
   gap: 10px;
 }
+.generate3 > img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: auto;
+}
 .generate3 > video {
   border-radius: 20px;
   width: 100%;
